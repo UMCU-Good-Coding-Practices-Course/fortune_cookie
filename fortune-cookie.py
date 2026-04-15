@@ -11,7 +11,7 @@ def get_wisdom() -> str:
     fortunes = [
         "If the duck understands, your code is good",
         "Commit to two things in life: your spouse and git",
-        "Errors should never pass silently.",
+        "Errors should never pass silently",
         "Coding repetition prevents code repetition",
         "No obstacles are truly removed by pushing with force"
     ]
