@@ -15,6 +15,7 @@ def get_wisdom() -> str:
         "Errors should never pass silently",
         "Coding repetition prevents code repetition",
         "No obstacles are truly removed by pushing with force",
+	      "fajfauhfahfa",
         "Life is too short to learn all the programming languages",
         "The best way to predict the future is to create it",
         "The best way to get a project done faster is to start sooner",
