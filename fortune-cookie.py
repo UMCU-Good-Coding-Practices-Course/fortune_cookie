@@ -1,5 +1,6 @@
 import random
 
+
 def get_wisdom() -> str:
     """Return a random wisdom from the list.
 
@@ -13,7 +14,15 @@ def get_wisdom() -> str:
         "Commit to two things in life: your spouse and git",
         "Errors should never pass silently",
         "Coding repetition prevents code repetition",
-        "No obstacles are truly removed by pushing with force"
+        "No obstacles are truly removed by pushing with force",
+        "In the face of ambiguity, refuse the temptation to guess",
+        "There should be one-- and preferably only one --obvious way to do it",
+        "One bird in hand is better than two in the bush",
+        "No obstacles are truly removed by pushing with force",
+        "Don't be afraid to ask for help, even if it means asking a rubber duck",
+        "In the face of ambiguity, refuse the temptation to guess",
+        "There should be one-- and preferably only one --obvious way to do it",
+        "Let branches be pointers in your life"
     ]
 
     fortune = random.choice(fortunes)
