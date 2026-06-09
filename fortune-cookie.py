@@ -54,16 +54,23 @@ def main(first_cookie: bool=True) -> None:
     
     # Ask for another cookie
     while True:
-        choice = input("🥠🥠 Would you like another cookie 🥠🥠 (Y/n)").strip().lower()
+        choice = input("Which cookie would you like 🥠 " \
+        "a. white chocolate/ b.rainbow chocolate / c. black chocolate / n. none of them)").strip().lower()
 
-        if choice in ("y", ""):
-                fortune = get_wisdom()
-                print_fortune(fortune)
-        else choice == "n":
+        if choice == "a":
+            fortune = get_wisdom()
+            print_fortune(fortune)
+        elif choice == "b":
+            fortune = get_wisdom()
+            print_fortune(fortune)
+        elif choice == "c":
+            fortune = get_wisdom()
+            print_fortune(fortune)
+        elif choice == "n":
             print("\nCome back for more anytime!")
             return None
         else:
-            print("Please enter Y or n.")
+            print("Please enter a/b/c or n.")
 
 if __name__ == "__main__":
     try:
