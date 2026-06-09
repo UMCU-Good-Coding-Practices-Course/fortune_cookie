@@ -57,4 +57,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\nCome back for more anytime!")
+        print("\nCome back for more anytime! Bye")
