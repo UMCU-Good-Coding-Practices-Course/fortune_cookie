@@ -15,8 +15,11 @@ def get_wisdom() -> str:
         "Errors should never pass silently",
         "Coding repetition prevents code repetition",
         "No obstacles are truly removed by pushing with force",
-        "In the face of ambiguity, refuse the temptation to guess",
-        "There should be one-- and preferably only one --obvious way to do it",
+	      "fajfauhfahfa",
+        "Life is too short to learn all the programming languages",
+        "The best way to predict the future is to create it",
+        "The best way to get a project done faster is to start sooner",
+        "Don't let perfection be the enemy of good enough",
         "One bird in hand is better than two in the bush",
         "No obstacles are truly removed by pushing with force",
         "Don't be afraid to ask for help, even if it means asking a rubber duck",
@@ -31,7 +34,7 @@ def get_wisdom() -> str:
 
 def print_fortune(fortune: str) -> None:
     """Print your fortune"""
-    print("\n✨ Your fortune: ✨")
+    print("\n✨✨ Your fortune: ✨✨")
     print(f"\"{fortune}\"\n")
 
 def main(first_cookie: bool=True) -> None:
@@ -73,4 +76,4 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\nCome back for more anytime!")
+        print("\n ✨ Come back for more anytime! ✨ ")
