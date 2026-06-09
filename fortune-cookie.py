@@ -1,5 +1,6 @@
 import random
 
+
 def get_wisdom() -> str:
     """Return a random wisdom from the list.
 
@@ -13,7 +14,18 @@ def get_wisdom() -> str:
         "Commit to two things in life: your spouse and git",
         "Errors should never pass silently",
         "Coding repetition prevents code repetition",
-        "No obstacles are truly removed by pushing with force"
+        "No obstacles are truly removed by pushing with force",
+	      "fajfauhfahfa",
+        "Life is too short to learn all the programming languages",
+        "The best way to predict the future is to create it",
+        "The best way to get a project done faster is to start sooner",
+        "Don't let perfection be the enemy of good enough",
+        "One bird in hand is better than two in the bush",
+        "No obstacles are truly removed by pushing with force",
+        "Don't be afraid to ask for help, even if it means asking a rubber duck",
+        "In the face of ambiguity, refuse the temptation to guess",
+        "There should be one-- and preferably only one --obvious way to do it",
+        "Let branches be pointers in your life"
     ]
 
     fortune = random.choice(fortunes)
@@ -22,7 +34,7 @@ def get_wisdom() -> str:
 
 def print_fortune(fortune: str) -> None:
     """Print your fortune"""
-    print("\n✨ Your fortune: ✨")
+    print("\n✨✨ Your fortune: ✨✨")
     print(f"\"{fortune}\"\n")
 
 def main(first_cookie: bool=True) -> None:
@@ -42,16 +54,23 @@ def main(first_cookie: bool=True) -> None:
     
     # Ask for another cookie
     while True:
-        choice = input("Would you like another cookie 🥠 (Y/n)").strip().lower()
+        choice = input("Which cookie would you like 🥠 " \
+        "a. white chocolate/ b.rainbow chocolate / c. black chocolate / n. none of them)").strip().lower()
 
-        if choice in ("y", ""):
-                fortune = get_wisdom()
-                print_fortune(fortune)
+        if choice == "a":
+            fortune = get_wisdom()
+            print_fortune(fortune)
+        elif choice == "b":
+            fortune = get_wisdom()
+            print_fortune(fortune)
+        elif choice == "c":
+            fortune = get_wisdom()
+            print_fortune(fortune)
         elif choice == "n":
             print("\nCome back for more anytime!")
             return None
         else:
-            print("Please enter Y or n.")
+            print("Please enter a/b/c or n.")
 
 if __name__ == "__main__":
     try:
